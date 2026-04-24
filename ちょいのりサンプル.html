@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ちょい旅タクシー</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;
+  background:#f4efe7;
+  color:#1f2933;
+}
+.hero{
+  min-height:92vh;
+  padding:34px 20px 28px;
+  background:
+    linear-gradient(rgba(20,31,43,.45),rgba(20,31,43,.7)),
+    url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1200&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.label{
+  display:inline-block;
+  background:#f6c453;
+  color:#1f2933;
+  font-weight:800;
+  font-size:12px;
+  padding:7px 12px;
+  border-radius:999px;
+  margin-bottom:14px;
+  width:max-content;
+}
+h1{
+  font-size:34px;
+  line-height:1.22;
+  margin:0 0 14px;
+  letter-spacing:.02em;
+}
+.lead{
+  font-size:16px;
+  line-height:1.8;
+  margin:0;
+}
+.actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:22px;
+}
+.action{
+  background:rgba(255,255,255,.92);
+  color:#1f2933;
+  padding:14px;
+  border-radius:18px;
+  font-weight:800;
+  text-align:center;
+  font-size:14px;
+}
+.section{
+  padding:24px 18px;
+}
+.section h2{
+  font-size:22px;
+  margin:0 0 8px;
+}
+.section p{
+  margin:0 0 18px;
+  color:#5b6470;
+  line-height:1.7;
+  font-size:14px;
+}
+.card{
+  background:white;
+  border-radius:24px;
+  padding:18px;
+  margin-bottom:16px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.badge{
+  display:inline-block;
+  background:#e8f3ef;
+  color:#1f7a5c;
+  font-size:12px;
+  font-weight:800;
+  padding:5px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+.card h3{
+  margin:0 0 8px;
+  font-size:20px;
+}
+.card p{
+  margin:0;
+  font-size:14px;
+  color:#4b5563;
+}
+.point{
+  margin-top:14px;
+  padding:12px;
+  border-radius:16px;
+  background:#f8fafc;
+  font-size:13px;
+  line-height:1.6;
+}
+.cta{
+  margin-top:14px;
+  background:#1f2933;
+  color:white;
+  text-align:center;
+  padding:13px;
+  border-radius:16px;
+  font-weight:800;
+}
+.footer{
+  background:#1f2933;
+  color:white;
+  text-align:center;
+  padding:26px 18px;
+}
+.footer h2{
+  margin:0 0 10px;
+  font-size:22px;
+}
+.footer p{
+  margin:0;
+  color:#d1d5db;
+  line-height:1.8;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="label">乗務員が選んだ地元スポット</div>
+  <h1>移動だけで終わらない。<br>このまま、ちょっと旅へ。</h1>
+  <p class="lead">
+    お仕事帰りに少し寄り道。<br>
+    車内で見つけて、休日にゆっくり。<br>
+    タクシーだから行ける、地元のおすすめをご紹介します。
+  </p>
+
+  <div class="actions">
+    <div class="action">今すぐ<br>ちょい寄り</div>
+    <div class="action">次回ゆっくり<br>観光・食事</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>こんな使い方、できます</h2>
+  <p>
+    貸切予約をしなくても、通常のタクシー利用の中で気軽に相談できます。
+  </p>
+
+  <div class="card">
+    <div class="badge">仕事の合間に</div>
+    <h3>15分だけ、景色を見に行く</h3>
+    <p>商談後や出張中の空き時間に、近くの絶景スポットへ少し寄り道。</p>
+    <div class="point">例：「少し時間があるので、近くで景色のいい所ありますか？」</div>
+  </div>
+
+  <div class="card">
+    <div class="badge">休日に</div>
+    <h3>この前見た場所へ、ゆっくり回る</h3>
+    <p>車内で気になったスポットを、次の休みに家族や友人と楽しむ使い方。</p>
+    <div class="point">例：「前に車内で見たおすすめコースを回りたいです」</div>
+  </div>
+
+  <div class="card">
+    <div class="badge">食事前に</div>
+    <h3>地元のおすすめ店へ向かう</h3>
+    <p>観光客向けだけでなく、乗務員が知っている地元目線のお店もご案内。</p>
+    <div class="point">例：「観光っぽすぎない、おすすめのお店ありますか？」</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>おすすめスポット</h2>
+  <p>乗務員アンケートから選んだ、まず見てほしい候補です。</p>
+
+  <div class="card">
+    <div class="badge">絶景</div>
+    <h3>大乗寺丘陵公園</h3>
+    <p>金沢市街地と日本海を一望。短時間でも立ち寄りやすいスポット。</p>
+    <div class="cta">ちょっと寄れますか？</div>
+  </div>
+
+  <div class="card">
+    <div class="badge">自然</div>
+    <h3>キゴ山・滝めぐり</h3>
+    <p>涼しさを感じられる自然スポット。夏場の気分転換にもおすすめ。</p>
+    <div class="cta">今度ゆっくり行きたい</div>
+  </div>
+
+  <div class="card">
+    <div class="badge">能登方面</div>
+    <h3>禄剛崎灯台</h3>
+    <p>日本海を望む灯台。休日に少し足を伸ばしたい方に。</p>
+    <div class="cta">休日コースで相談する</div>
+  </div>
+
+  <div class="card">
+    <div class="badge">食事</div>
+    <h3>地元グルメスポット</h3>
+    <p>回転寿司、海鮮、地元で人気のお店など、乗務員目線でご案内。</p>
+    <div class="cta">おすすめのお店を聞く</div>
+  </div>
+</section>
+
+<div class="footer">
+  <h2>気になったら、乗務員へ。</h2>
+  <p>
+    「ここ寄れますか？」<br>
+    「今度ゆっくり回りたいです」<br>
+    その一言で大丈夫です。
+  </p>
+</div>
+
+</body>
+</html>
